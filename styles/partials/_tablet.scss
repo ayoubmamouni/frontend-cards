@@ -1,0 +1,17 @@
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .card-project {
+    max-width: 800px;
+  }
+  main.projects {
+    grid-template-columns: 1fr;
+  }
+  .swiper {
+    max-width: 400px;
+    width: 100%;
+  }
+  //   .card-project {
+  //   }
+  // .slider-details {
+  //   flex-direction: column;
+  // }
+}

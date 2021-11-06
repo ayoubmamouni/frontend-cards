@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px) {
+  main.projects {
+    // grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card-project {
+    padding: 15px;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    max-width: auto !important;
+  }
+  .swiper {
+    max-width: 550px;
+    min-height: 250px;
+    height: 300px;
+    width: 100%;
+  }
+  //   .card-project {
+  //   }
+  .slider-details {
+    flex-direction: column;
+  }
+  .details-project {
+    margin: 0;
+    margin-top: 10px;
+    max-width: 550px;
+    width: 100%;
+  }
+  .icons-buttons {
+    .built-with {
+      justify-content: flex-start;
+      max-width: 100%;
+      overflow-x: auto;
+      .blue-circle {
+        width: 50px;
+        height: 50px;
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+  .project-buttons {
+    width: 100%;
+    .project-btn {
+      margin: 0 2px;
+    }
+    // background-color: red;
+  }
+}

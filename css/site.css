@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.project-buttons, .icons-buttons .built-with .blue-circle, .icons-buttons .built-with, .icons-buttons, .slider-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  flex: 1;
+  width: 100%;
+  height: 200px;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-project {
+  background-color: #f4f4f4;
+  max-width: 700px;
+  width: 95%;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 10px;
+}
+
+.slider-details {
+  width: 100%;
+}
+
+.details-project {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 20px;
+}
+.details-project h1 {
+  color: #03030c;
+  margin-bottom: 0.4rem;
+  font-size: 25px;
+}
+.details-project p {
+  color: #333;
+  letter-spacing: 1.3px;
+  line-height: 1.3;
+}
+
+.project-buttons .project-btn {
+  padding: 15px;
+  border: 0;
+  border-radius: 3px;
+  transform: scale(0.98);
+  text-decoration: none;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  color: #0e0f34;
+}
+
+.icons-buttons {
+  flex-direction: column;
+}
+.icons-buttons .built-with {
+  padding: 1rem 0;
+  max-width: 500px;
+}
+.icons-buttons .built-with .blue-circle {
+  margin: 0 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0e0f34;
+  transition: 300ms;
+}
+.icons-buttons .built-with .blue-circle:hover {
+  transform: scale(1.04);
+}
+.icons-buttons .built-with .blue-circle img {
+  width: 50px;
+  object-fit: contain;
+}
+
+.project-buttons {
+  height: 50px;
+  width: 70%;
+}
+@media (min-width: 550px) {
+  .project-buttons {
+    max-width: 550px;
+  }
+}
+.project-buttons .project-btn {
+  color: #dbdbdb;
+}
+.project-buttons .visit-project {
+  background-color: #ff0d5f;
+}
+.project-buttons .view-on-github {
+  background-color: #0e0f34;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+body {
+  background: #0e0f34;
+  color: #f4f4f4;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+main.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  main.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-project {
+    padding: 15px;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    max-width: auto !important;
+  }
+
+  .swiper {
+    max-width: 550px;
+    min-height: 250px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .slider-details {
+    flex-direction: column;
+  }
+
+  .details-project {
+    margin: 0;
+    margin-top: 10px;
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .icons-buttons .built-with {
+    justify-content: flex-start;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .icons-buttons .built-with .blue-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .icons-buttons .built-with .blue-circle img {
+    width: 50px;
+  }
+
+  .project-buttons {
+    width: 100%;
+  }
+  .project-buttons .project-btn {
+    margin: 0 2px;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .card-project {
+    max-width: 800px;
+  }
+
+  main.projects {
+    grid-template-columns: 1fr;
+  }
+
+  .swiper {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=site.css.map */
