@@ -118,9 +118,12 @@ body {
 main.projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
   justify-items: center;
+}
+@media (min-width: 1440px) {
+  main.projects {
+    row-gap: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -176,7 +179,7 @@ main.projects {
     margin: 0 2px;
   }
 }
-@media screen and (max-width: 1440px) and (min-width: 768px) {
+@media screen and (max-width: 1450px) and (min-width: 768px) {
   .card-project {
     max-width: 800px;
   }

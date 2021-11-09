@@ -1,11 +1,12 @@
-//font
 @use "./partials/color";
 %flexProps {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+//font
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+//components
 @import "./partials/slider";
 @import "./partials/card";
 @import "./partials/buttons";
@@ -26,11 +27,12 @@ body {
 main.projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
+  @media (min-width: 1440px) {
+    row-gap: 20px;
+  }
   justify-items: center;
 }
 
-//mobile devices
+//small devices
 @import "./partials/mobile";
 @import "./partials/tablet";
